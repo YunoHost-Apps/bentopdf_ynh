@@ -20,7 +20,7 @@ Privacy First PDF Toolkit
 
 
 ## Screenshots
-![Screenshot of BentoPDF](./doc/screenshots/svreenshot.png)
+![Screenshot of BentoPDF](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
