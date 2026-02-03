@@ -43,10 +43,6 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-
-    #url = "https://github.com/alam00000/bentopdf/releases/download/v2.1.0/dist-2.1.0.zip"
-    #sha256 = "9bf84da49ba2016a838b75ae560edb93e925b8a367643f232dd2d401236e54be"
-
     url = "https://github.com/alam00000/bentopdf/archive/refs/tags/v2.1.0.tar.gz"
     sha256 = "3dd5b9648bc5d1f56d1be68f221b66071aea547898a4359e37b97b7d348fed4e"
 
