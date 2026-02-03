@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "bentopdf"
-name = "Bentopdf"
+name = "BentoPDF"
 description.en = "Privacy First PDF Toolkit"
 description.fr = "Kit d'outils PDF Privacy First"
 
