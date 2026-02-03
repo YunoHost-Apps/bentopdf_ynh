@@ -4,8 +4,8 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/bentopdf.png" width="32px" alt="Logo of Bentopdf">
-  Bentopdf, packaged for YunoHost
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/bentopdf.png" width="32px" alt="Logo of BentoPDF">
+  BentoPDF, packaged for YunoHost
 </h1>
 
 Privacy First PDF Toolkit
@@ -20,13 +20,13 @@ Privacy First PDF Toolkit
 
 
 ## Screenshots
-![Screenshot of Bentopdf](./doc/screenshots/svreenshot.png)
+![Screenshot of BentoPDF](./doc/screenshots/svreenshot.png)
 
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/bentopdf)](https://ci-apps.yunohost.org/ci/apps/bentopdf/)
 
-🛠️ Upstream Bentopdf repository: <https://github.com/alam00000/bentopdf>
+🛠️ Upstream BentoPDF repository: <https://github.com/alam00000/bentopdf>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/bentopdf_ynh/tree/testing).
 
