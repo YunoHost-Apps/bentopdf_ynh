@@ -29,7 +29,7 @@ ynh_script_progression "Installing the app..."
 
 pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true BASE_URL=$path/ npm run build
+	ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true npm run build
 popd
 
 #=================================================
