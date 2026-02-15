@@ -38,6 +38,13 @@ ram.runtime = "150M"
     type = "group"
     default = "visitors"
 
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "select"
+    choices = ["en", "ar", "be", "da", "de", "es", "fr", "id", "it", "nl", "pt", "tr", "vi", "zh", "zh-TW"]
+    default = "fr"
+
 [resources]
 
     [resources.sources]
