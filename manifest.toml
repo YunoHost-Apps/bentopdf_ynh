@@ -43,8 +43,8 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/alam00000/bentopdf/archive/refs/tags/v2.2.1.tar.gz"
-    sha256 = "8eb091ea27fc451f832999486ad6281eddafd17086197e3d2f8af09e0595a547"
+    url = "https://github.com/alam00000/bentopdf/releases/download/v2.2.1/dist-2.2.1.zip"
+    sha256 = "6e9aed3c6e4815145d7a283834782a006dd4ad52a8de7eb0e4dd91ca4f5406b7"
 
     autoupdate.strategy = "latest_github_tag"
 
