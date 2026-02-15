@@ -28,8 +28,10 @@ ynh_config_add_nginx
 ynh_script_progression "Installing the app..."
 
 pushd "$install_dir"
+	export SIMPLE_MODE=true
+	export BASE_URL=$path/
 	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true BASE_URL=$path/ npm run build
+	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
 #=================================================
