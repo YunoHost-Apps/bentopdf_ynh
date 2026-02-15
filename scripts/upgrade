@@ -27,8 +27,15 @@ ynh_script_progression "Installing the app..."
 
 pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true BASE_URL=$path/ npm run build
+	if [ $path != "/" ]
+	then
+		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true BASE_URL=$path/ npm run build
+	else
+		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true npm run build
+	fi
 popd
+
+chown -R $app:www-data $install_dir/dist
 
 #=================================================
 # END OF SCRIPT
