@@ -14,9 +14,9 @@ ynh_script_progression "Rebuilding the app..."
 pushd "$install_dir"
 	if [ $new_path != "/" ]
 	then
-		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true BASE_URL=$new_path/ npm run build
+		ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true BASE_URL=$new_path/ npm run build
 	else
-		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true npm run build
+		ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true npm run build
 	fi
 popd
 
