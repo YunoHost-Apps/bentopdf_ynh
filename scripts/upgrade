@@ -13,8 +13,6 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace
 
-ynh_replace --match="--max-old-space-size=3072" --replace="--max-old-space-size=4096" --file="$install_dir/package.json"
-
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
 #=================================================
@@ -31,9 +29,9 @@ pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app npm install
 	if [ $path != "/" ]
 	then
-		ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true BASE_URL=$path/ npm run build
+		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true BASE_URL=$path/ npm run build
 	else
-		ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true npm run build
+		ynh_hide_warnings ynh_exec_as_app NODE_OPTIONS="--max-old-space-size=4096" SIMPLE_MODE=true npm run build
 	fi
 popd
 
