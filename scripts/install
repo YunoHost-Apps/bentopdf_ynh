@@ -23,17 +23,6 @@ ynh_script_progression "Adding system configurations related to $app..."
 ynh_config_add_nginx
 
 #=================================================
-# INSTALL BENTOPDF
-#=================================================
-ynh_script_progression "Installing the app..."
-
-pushd "$install_dir"
-	ynh_hide_warnings ynh_exec_as_app npm install
-	ynh_hide_warnings ynh_exec_as_app SIMPLE_MODE=true npm run build
-popd
-
-#=================================================
 # END OF SCRIPT
 #=================================================
-
 ynh_script_progression "Installation of $app completed"
