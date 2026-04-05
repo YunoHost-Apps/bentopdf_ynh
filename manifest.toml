@@ -7,7 +7,7 @@ name = "BentoPDF"
 description.en = "Privacy First PDF Toolkit"
 description.fr = "Kit d'outils PDF Privacy First"
 
-version = "2.3.1~ynh1"
+version = "2.8.2~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -26,8 +26,8 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "2000M"
-ram.build = "3000M"
+disk = "250M"
+ram.build = "0M"
 ram.runtime = "150M"
 
 [install]
@@ -43,10 +43,13 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/alam00000/bentopdf/archive/refs/tags/v2.3.1.tar.gz"
-    sha256 = "a47c323305c8020a35ccd9653b89981136cf574c9c170ecee36fca178c1240d5"
-
-    autoupdate.strategy = "latest_github_tag"
+    url = "https://github.com/alam00000/bentopdf/releases/download/v2.8.2/dist-simple-2.8.2.zip"
+    sha256 = "40aa4de1030c71c762df305cd9cddc3c0d2d91161b3a52c361e9d006b7cbc752"
+    format = "zip"
+    extract = true
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "dist-simple-*.zip"
 
     [resources.system_user]
 
@@ -55,6 +58,3 @@ ram.runtime = "150M"
     
     [resources.permissions]
     main.url = "/"
-
-    [resources.nodejs]
-    version = "22"
