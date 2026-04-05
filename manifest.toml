@@ -26,8 +26,8 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "2000M"
-ram.build = "3000M"
+disk = "250M"
+ram.build = "0M"
 ram.runtime = "150M"
 
 [install]
@@ -43,10 +43,13 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/alam00000/bentopdf/archive/refs/tags/v2.7.0.tar.gz"
-    sha256 = "c24a1b1d916c5003559bde1d64b8d7b8fc27b294a1fc3a644809333ea88e1f9d"
-
-    autoupdate.strategy = "latest_github_tag"
+    url = "https://github.com/alam00000/bentopdf/releases/download/v2.8.2/dist-simple-2.8.2.zip"
+    sha256 = "40aa4de1030c71c762df305cd9cddc3c0d2d91161b3a52c361e9d006b7cbc752"
+    format = "zip"
+    extract = true
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "dist-simple-*.zip"
 
     [resources.system_user]
 
@@ -55,6 +58,3 @@ ram.runtime = "150M"
     
     [resources.permissions]
     main.url = "/"
-
-    [resources.nodejs]
-    version = "22"
