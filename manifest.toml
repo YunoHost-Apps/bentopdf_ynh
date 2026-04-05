@@ -43,13 +43,13 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/alam00000/bentopdf/releases/download/v2.7.0/dist-2.7.0.zip"
-    sha256 = "1d390be93be15fe9d0ea8a22bf356e5155ee72dd05be42aed3d6e7e3eb76fe17"
+    url = "https://github.com/alam00000/bentopdf/releases/download/v2.8.2/dist-simple-2.8.2.zip"
+    sha256 = "40aa4de1030c71c762df305cd9cddc3c0d2d91161b3a52c361e9d006b7cbc752"
     format = "zip"
     extract = true
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "dist-*.zip"
+    autoupdate.asset = "dist-simple-*.zip"
 
     [resources.system_user]
 
