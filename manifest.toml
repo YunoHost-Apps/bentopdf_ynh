@@ -49,7 +49,7 @@ ram.runtime = "150M"
     extract = true
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "dist-simple-.*\.zip"
+    autoupdate.asset = "dist-simple-.*\\.zip"
 
     [resources.system_user]
 
