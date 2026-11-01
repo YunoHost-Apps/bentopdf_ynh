@@ -7,7 +7,7 @@ name = "BentoPDF"
 description.en = "Privacy First PDF Toolkit"
 description.fr = "Kit d'outils PDF Privacy First"
 
-version = "2.8.10~ynh1"
+version = "2.8.11~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,8 +43,8 @@ ram.runtime = "150M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/alam00000/bentopdf/releases/download/v2.8.10/dist-simple-2.8.10.zip"
-    sha256 = "c8b59b2572c522ffc06fdfa5f76cb926cc84ef077dd025e15074de7abf0f7777"
+    url = "https://github.com/alam00000/bentopdf/releases/download/v2.8.11/dist-simple-2.8.11.zip"
+    sha256 = "fab3bfd84bd9260658aac620552d04d54bda2151a544c56a653dee34bece50da"
     format = "zip"
     extract = true
     in_subdir = false
